@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Organizador ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="decoracao">♡</div>
+
+        <h1>Organiza<span>♡</span></h1>
+
+        <p>seus planos, seus sonhos, suas tarefas</p>
+
+        <div class="frase">
+            pequenos passos também são grandes conquistas ♡
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- CADERNO -->
+
+        <section class="caderno">
+
+            <div class="espiral">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="pagina">
+
+                <div class="topo-pagina">
+
+                    <div class="nome-caderno">
+                        <span>♡</span>
+                        <h2>Meu caderno</h2>
+                    </div>
+
+                    <div class="controle-pagina">
+                        <button id="anterior">‹</button>
+                        <span id="numeroPagina">1 / 5</span>
+                        <button id="proximo">›</button>
+                    </div>
+
+                </div>
+
+                <div
+                    id="textoPagina"
+                    class="area-escrita"
+                    contenteditable="true"
+                    spellcheck="false"
+                ></div>
+
+                <div class="coracao-pagina">♡</div>
+
+            </div>
+
+            <div class="abas">
+                <button data-pagina="1">1</button>
+                <button data-pagina="2">2</button>
+                <button data-pagina="3">3</button>
+                <button data-pagina="4">4</button>
+                <button data-pagina="5">5</button>
+            </div>
+
+        </section>
+
+
+        <!-- TAREFAS -->
+
+        <section class="tarefas">
+
+            <div class="titulo-box">
+                <div>
+                    <span class="icone">✓</span>
+                    <h2>Tarefas pendentes</h2>
+                </div>
+
+                <span class="coracao">♡</span>
+            </div>
+
+            <div class="adicionar-tarefa">
+
+                <input
+                    type="text"
+                    id="novaTarefa"
+                    placeholder="Adicionar uma tarefa..."
+                >
+
+                <button id="adicionar">+</button>
+
+            </div>
+
+            <ul id="listaTarefas"></ul>
+
+        </section>
+
+
+        <!-- POST-ITS -->
+
+        <section class="postits">
+
+            <div class="titulo-box">
+
+                <div>
+                    <span class="icone">✎</span>
+                    <h2>Meus post-its</h2>
+                </div>
+
+                <span class="coracao">♡</span>
+
+            </div>
+
+            <div class="novo-postit">
+
+                <input
+                    type="text"
+                    id="textoPostit"
+                    placeholder="Escreva um lembrete..."
+                >
+
+                <button id="adicionarPostit">+</button>
+
+            </div>
+
+            <div id="listaPostits" class="lista-postits"></div>
+
+        </section>
+
+
+        <!-- FOTOS -->
+
+        <section class="fotos">
+
+            <div class="foto-polaroid">
+
+                <div class="foto" id="foto1">
+                    <span>♡</span>
+                    <p>adicione uma foto</p>
+                </div>
+
+                <input
+                    type="file"
+                    id="upload1"
+                    accept="image/*"
+                >
+
+                <label for="upload1">
+                    escolher foto
+                </label>
+
+                <p class="legenda">momentos ♡</p>
+
+            </div>
+
+
+            <div class="foto-polaroid">
+
+                <div class="foto" id="foto2">
+                    <span>♡</span>
+                    <p>adicione uma foto</p>
+                </div>
+
+                <input
+                    type="file"
+                    id="upload2"
+                    accept="image/*"
+                >
+
+                <label for="upload2">
+                    escolher foto
+                </label>
+
+                <p class="legenda">inspirações ♡</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <span></span>
+        <b>♡</b>
+        <span>Santarelli | TDS</span>
+        <b>♡</b>
+      
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
